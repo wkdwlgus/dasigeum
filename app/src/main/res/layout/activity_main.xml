@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/mainLogoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/mainLogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="5dp"/>
+    <ImageView
+        android:id="@+id/searchImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/hambergerImageView"
+        app:srcCompat="@drawable/ic_baseline_search_35"
+        app:layout_constraintTop_toTopOf="@id/mainLogoImageView"
+        app:layout_constraintBottom_toBottomOf="@id/mainLogoImageView"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/hambergerImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_round_dehaze_45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mainLogoImageView"
+        app:layout_constraintBottom_toBottomOf="@id/mainLogoImageView"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/mainIntroduceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/searchImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="간편한 일자리 탐색과\n커리어 관리를 함께"
+        android:textSize="30sp"
+        android:lineSpacingMultiplier="1.2"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.15"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/subIntroduceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mainIntroduceTextView"
+        app:layout_constraintStart_toStartOf="@id/mainIntroduceTextView"
+        android:text="중장년층 커리어 관리 플랫폼"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="1dp"
+        android:textColor="@color/black"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
